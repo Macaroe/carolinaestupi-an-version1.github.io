@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cundinamarca</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>		
+	<link rel="stylesheet" type="text/css" href="estilos.css"/>
+  <header>
+    <h1>Biodiversidad de Cundinamarca y Boyacá</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="#">Cundinamarca</a>
+          <ul>
+            <li><a href="paramosc.html">Páramos</a></li>
+            <li><a href="faunac.html">Fauna</a></li>
+            <li><a href="florac.html">Flora</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Boyacá</a>
+          <ul>
+            <li><a href="paramosb.html">Páramos</a></li>
+            <li><a href="faunab.html">Fauna</a></li>
+            <li><a href="florab.html">Flora</a></li>
+            <li><a href="mapa2.html">Mapa</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+    </nav>
+    <br>
+  </header>
+<section>
+	<h1 class="titulo-mapa">Mapa de  cundinamarca</h1>
+	<select name="select-location" id="select-location">
+		<option value="-1">Seleccione un lugar:</option>
+    <option value="4.6097,-74.0817">Bogotá</option>
+    <option value="4.8594,-74.0331">Chía</option>
+    <option value="5.0219,-74.0024">Zipaquirá</option>
+    <option value="4.9167,-74.0167">Cajicá</option>
+    <option value="4.8143,-74.3637">Facatativá</option>
+    <option value="4.3057,-74.8010">Girardot</option>
+    <option value="4.6315,-74.4680">La Mesa</option>
+    <option value="4.7165,-74.2100">Funza</option>
+    <option value="4.5841,-74.2154">Soacha</option>
+    <option value="4.7345,-74.2714">Madrid</option>
+		
+	</select>
+	<div id="map"></div>
+</section>
+</head>
+<body>	
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script>   		
+	
+	<script src="mapa.js"></script>
+</body>
+<section>
+  <footer >
+    <div class="osofooter">
+     <img src="img/o1.png" alt="Imagen 1">
+       </div>
+         <div class="footer-icons">
+          <a href="https://www.facebook.com"><img src="img/logo1.png" alt="Icono 1"></a>
+          <a href="https://www.instagram.com"><img src="img/logo2.png" alt="Icono 2"></a>
+          <a href="https://www.youtube.com"><img src="img/logo3.png" alt="Icono 3"></a>
+          
+
+             <p>© 2024 Todos los derechos reservados</p>
+       
+         </div>
+     </footer>
+               
+</section>
+</html>

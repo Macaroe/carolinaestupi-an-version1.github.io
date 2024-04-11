@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!--etiqueta que declara que es  un documento html5 en navegadores  viejos -->
+
+<html lang="es"><!--etiqueta que declara el lenguaje en el que esta hecho l a pagina-->
+<head> <!--encabezado de la página, esta parte no se  ve dentro de cuerpo-->
+  <meta charset="utf-8"><!--identifica  caracteres especiales como tildes, ñ etc-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--esta etiqueta  permite que sea adaptable a otros dispositivos -->
+  <meta name="descripcion" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá"><!--permite dar  una  breve descripcion  de la  pagina-->
+  <title>Inicio</title> <!--titulo que  aparece en los  navegadores-->
+  <link href="estilos.css" rel="stylesheet" type="text/css" /><!--enlace  de los estilos-->
+
+</head>
+
+<body> <!--cuerpo de  la página-->
+
+  <header> <!--agrupa contenido en este  caso logos, menus de  navegacion-->
+    <h1>Biodiversidad de Cundinamarca y Boyacá</h1> <!--encabezado-->
+    <nav><!--etiqueta de menu de  navegacion-->
+      <ul> <!--lista desordenada-->
+        <li><a href="index.html">Inicio</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+        <li>
+          <a href="#">Cundinamarca</a><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+          <ul>
+            <li><a href="paramosc.html" target="_blank">Páramos</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+            <li><a href="faunac.html" target="_blank">Fauna</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+            <li><a href="florac.html" target="_blank">Flora</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+            <li><a href="mapa.html" target="_blank">Mapa</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+          </ul>
+        </li>
+        <li>
+          <a href="#">Boyacá</a> <!--el # sirve  para  que  la  pagina  no vaya  a  ningun lado-->
+          <ul>
+            <li><a href="paramosb.html" target="_blank">Páramos</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+            <li><a href="faunab.html" target="_blank">Fauna</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+            <li><a href="florab.html" target="_blank">Flora</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+            <li><a href="mapa2.html" target="_blank" >Mapa</a></li><!--etiqueta  a href permite enlazar a otros sitios de  internet  o otras paginas dentro  del  sitio  -->
+           
+          </ul>
+        </li>
+        
+      </ul>
+    </nav>
+    <br>
+  </header>
+
+  <section> <!--Divide  el contenido, dentro  de la  pagina -->
+    <!--slider-->
+    <div class="caja-slider"><!--esta caja la  hice para modificar el color  -->
+    <div class="slider-container"><!--primero se crea un contenedor -->
+      <div class="slider"> <!--se crea  una clase slider, alli va alojado  las imagenes-->
+        <div class="slide"><img src="slider/imagen/1.jpg" alt="Imagen 1"></div><!--imagenes del slider, estan alojadas en una  carpeta llamada  slider -->
+        <div class="slide"><img src="slider/imagen/2.jpg" alt="Imagen 2"></div><!--imagenes del slider, estan alojadas en una  carpeta llamada  slider -->
+        <div class="slide"><img src="slider/imagen/3.jpg" alt="Imagen 3"></div><!--imagenes del slider, estan alojadas en una  carpeta llamada  slider -->
+        <div class="slide"><img src="slider/imagen/4.jpg" alt="Imagen 4"></div><!--imagenes del slider, estan alojadas en una  carpeta llamada  slider -->
+      </div>
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button> <!--botones del slider  izquierda, el cual tiene un evento en javascript  y una funcion llamada plusSlides que es llamada en el documento javascript -->
+      <button class="next" onclick="plusSlides(1)">&#10095;</button><!--boton  de   slider derecha, el cual  tiene  un evento  en  javascript y  una  funcion llamada  plusslides-->
+    </div>
+    </div>
+    </section>
+
+
+
+
+  <section><!--permite  agrupar el contenido-->
+    <div class="contenedor"><!--se hace una  clase con el nombre  contenedor-->
+  
+            <div class="caja1"><!--dentro de ese contenedor se  hacen otra clase, recuerden que  las  clases nos permiten manipular los elementos-->
+              <div class="h2-paramos"><!--dentro  de  caja1 se hace otra clase llamada h2 para  modificar el aspecto de varios h2-->
+                <h2>Conozcamos la maravillosa Cundinamarca</h2> <!--encabezado-->   
+              </div>
+            <div class="parrafo1"><!--se crea otra clase llamado parrafo1 para  modificar todas las etiquetas p que esten con la  clase  parrafo-->
+                <p>Desde las montañas hasta los valles y ríos, Cundinamarca alberga diversos ecosistemas que sostienen la vida. <br>
+                  <br>El agua clara, los bosques frondosos y el aire puro son ejemplos de esta interconexión.</p>
+                </div>
+               <section>
+                <div class="contenido1"> <!--se crea un contenedor que contiene  una  imagen-->
+                  <img src="img/3.png" alt="Descripción de la imagen" class="imagen-hover"> <!--imagen con una  clase  llamada  hover que  permite ser manipulada en css o javascript-->
+                </div>
+               </section>
+            </div>
+    </div>
+          </section>
+ 
+            
+              <section> <!--divide  el  contenido-->
+                  <div class="caja2"> <!--este es  otro contenedor, es una caja que tiene almacenados  los  elementos  que estan abajos -->
+                    <div class="h2-paramos"> <!--contenedor que  guarda  un  encabezado -->
+                      <h2>Conozcamos la  mágica Boyacá</h2>  <!--encabezado-->  
+                    </div>
+                  <div class="parrafo1">
+                      <p>Boyacá, Colombia, es famoso por su rica biodiversidad, desde páramos hasta bosques tropicales.
+                          <br>
+                          <br> La conservación de estos ecosistemas es esencial para proteger la biodiversidad local y proporcionar servicios vitales a las comunidades humanas.</p>
+                     </div>
+                     <div class="contenido1"> <!--contenedor  imagwnes-->
+                      <img src="img/pumita.png" alt="Descripción de la imagen" class="imagen-hover">
+                   </div>
+                   </div>
+              </section>
+                  
+               <!--footer o pie de  página--> 
+
+           <footer > <!--pie de  pagina -->
+         <div class="osofooter"> <!--contenedor -->
+          <img src="img/o1.png" alt="Imagen 1"> <!--imagen dentro el contenedor  footer-->
+            </div>
+              <div class="footer-icons"><!--contendedor que tiene  imagenes y enlaces-->
+                <a href="https://www.facebook.com" target="_blank"><img src="img/logo1.png" alt="Icono 1"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/logo2.png" alt="Icono 2"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="img/logo3.png" alt="Icono 3"></a>
+                <p>© 2024 Todos los derechos reservados</p>
+            
+              </div>
+          </footer>
+     
+  <script src="script.js"  ></script> <!--esta eriqueta, permite enlazar archivos  de javascript-->
+  </body>
+  </html>      
+            
+      
+         
+     
+         
+        
+          
+             
+
+         
